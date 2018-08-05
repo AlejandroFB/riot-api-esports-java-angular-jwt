@@ -1,0 +1,29 @@
+<h1>Greeting</h1>
+<div>
+
+    <h2>Search</h2>
+    <form name="searchForm" ng-submit="searchForm.$valid && model.search()" novalidate>
+        <div class="form-group" ng-class="{ 'has-error': searchForm.$submitted && searchForm.search.$invalid }">
+            <label for="search">Search</label>
+            <input type="text" id="search" name="search" class="form-control" ng-model="model.searchInput"
+                   placeholder="Summoner name" required />
+        </div>
+        <div class="form-group" ng-class="{ 'has-error': searchForm.$submitted && searchForm.region.$invalid }">
+            <select id="region" name="region" class="form-control" ng-model="model.regionInput" ng-init="model.regionInput='EUW'" required>
+                <option value="EUW" selected="selected">Europe West</option>
+                <option value="NA">Noth America</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary" type="submit">Search</button>
+        </div>
+        <div ng-if="model.error" class="alert alert-danger">{{ model.error }}</div>
+    </form>
+
+    <h2>Summoner</h2>
+    <p>Summoner ID - {{ model.summoner.id }}</p>
+    <p>Summoner Name - {{ model.summoner.name }}</p>
+    <p>Summoner ProfileIconID - {{ model.summoner.profileIconId }}</p>
+    <p>Summoner Level - {{ model.summoner.summonerLevel }}</p>
+    <p>Summoner RevisionDate - {{ model.summoner.revisionDate }}</p>
+</div>

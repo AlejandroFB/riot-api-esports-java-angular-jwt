@@ -1,0 +1,63 @@
+
+# Main #
+target/
+/build/
+/bin/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# IntelliJ #
+*.iml
+.idea/
+
+# Eclipse #
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+
+*.bak
+*.swp
+*~.nib
+.classpath
+.settings/
+.loadpath
+.cproject
+.buildpath
+
+# NetBeans #
+nb-configuration.xml
+nbactions.xml
+nbproject
+nbproject/
+
+# Windows #
+Thumbs.db
+Desktop.ini
+
+# OS X #
+.DS_Store
+.Spotlight-V100
+.Trashes
+
+# CSS compiled directly from LESS #
+
+# Compiled scripts and angular templates #
+
+# Sourcemaps #
+*.css.map
+*.js.map
+
+# Node packages #
+node_modules/
+
+# Bower components #
+# 'bower_components' matches file, directory, link or anything. 'bower_components/' will match only a directory
+bower_components/
+
+dist/
